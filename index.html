@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TukuStyle – Affordable Kenyan Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =============================================
+       NAVIGATION
+  ============================================= -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav__inner">
+
+        <!-- Logo -->
+        <a href="#" class="nav__logo" aria-label="TukuStyle Home">
+          <div class="nav__logo-mark" aria-hidden="true">
+            <!-- Simple hanger icon -->
+            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm0 4v2l-7 5h14l-7-5z"/>
+            </svg>
+          </div>
+          <span class="nav__logo-text">Tuku<span>Style</span></span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="nav__menu" role="list">
+          <li><a href="#" class="nav__link active">Home</a></li>
+          <li><a href="#products" class="nav__link">Shop</a></li>
+          <li><a href="#categories" class="nav__link">Categories</a></li>
+          <li><a href="#why" class="nav__link">About</a></li>
+          <li><a href="#footer" class="nav__link">Contact</a></li>
+        </ul>
+
+        <a href="#products" class="btn btn-primary nav__cta">Shop Now</a>
+
+        <!-- Hamburger (mobile) -->
+        <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+
+      <!-- Mobile dropdown menu -->
+      <ul class="nav__mobile" id="mobileMenu" role="list" aria-label="Mobile navigation">
+        <li><a href="#" class="nav__link active">Home</a></li>
+        <li><a href="#products" class="nav__link">Shop</a></li>
+        <li><a href="#categories" class="nav__link">Categories</a></li>
+        <li><a href="#why" class="nav__link">About</a></li>
+        <li><a href="#footer" class="nav__link">Contact</a></li>
+        <li style="margin-top: 8px;"><a href="#products" class="btn btn-primary" style="width:100%; justify-content:center;">Shop Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- =============================================
+     HERO SECTION
+============================================= -->
+<section class="hero" id="home" aria-label="Hero – Affordable Style">
+  <div class="container">
+    <div class="hero__inner">
+
+      <!-- Text Side -->
+      <div class="hero__content">
+        <div class="hero__tag">Weekly New Stock</div>
+
+        <h1 class="display-xl hero__heading">
+          Affordable Style.<br>
+          <span class="line-accent">Quality</span><br>
+          <span class="line-gradient">Second-Hand</span><br>
+          Fashion.
+        </h1>
+
+        <p class="hero__desc">
+          Nairobi's best mitumba collection — hand-picked quality pieces for men, women & kids. Look sharp without breaking the bank.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#products" class="btn btn-primary">
+            Shop Now
+          </a>
+          <a href="#categories" class="btn btn-outline">
+            Browse Categories
+          </a>
+        </div>
+
+        <div class="hero__stats">
+          <div>
+            <div class="hero__stat-value">500+</div>
+            <div class="hero__stat-label">Items in Stock</div>
+          </div>
+          <div>
+            <div class="hero__stat-value">2K+</div>
+            <div class="hero__stat-label">Happy Shoppers</div>
+          </div>
+          <div>
+            <div class="hero__stat-value">4.9★</div>
+            <div class="hero__stat-label">Average Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Side -->
+      <div class="hero__visual">
+
+        
+        <div class="hero__img-wrap">
+          <img 
+            src="images/hero sec.png" 
+            alt="Second hand clothes display" 
+            class="hero__img"
+          >
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+ <!-- =============================================
+     FEATURED CATEGORIES
+============================================= -->
+<section class="categories section" id="categories">
+  <div class="container">
+
+    <header class="section-header">
+      <div class="section-label">Explore</div>
+      <h2 class="section-title">Shop by Category</h2>
+    </header>
+
+    <div class="categories__grid">
+
+      <!-- MEN -->
+      <a href="#" class="cat-card">
+        <div class="cat-card__img">
+          
+          <img src="images/mens clothing.jpg" alt="Men Clothing">
+        </div>
+        <div class="cat-card__overlay"></div>
+        <div class="cat-card__body">
+          <div class="cat-card__name">Men</div>
+          <div class="cat-card__count">148 items</div>
+        </div>
+      </a>
+
+      <!-- WOMEN -->
+      <a href="#" class="cat-card">
+        <div class="cat-card__img">
+          <img src="images/women clothing.jpg" alt="Women Clothing">
+        </div>
+        <div class="cat-card__overlay"></div>
+        <div class="cat-card__body">
+          <div class="cat-card__name">Women</div>
+          <div class="cat-card__count">212 items</div>
+        </div>
+      </a>
+
+      <!-- KIDS -->
+      <a href="#" class="cat-card">
+        <div class="cat-card__img">
+          <img src="images/kids  clothing.jpg" alt="Kids Clothing">
+        </div>
+        <div class="cat-card__overlay"></div>
+        <div class="cat-card__body">
+          <div class="cat-card__name">Kids</div>
+          <div class="cat-card__count">94 items</div>
+        </div>
+      </a>
+
+      <!-- ACCESSORIES -->
+      <a href="#" class="cat-card">
+        <div class="cat-card__img">
+          <img src="images/accessories.jpg" alt="Accessories">
+        </div>
+        <div class="cat-card__overlay"></div>
+        <div class="cat-card__body">
+          <div class="cat-card__name">Accessories</div>
+          <div class="cat-card__count">76 items</div>
+        </div>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- =============================================
+     FEATURED PRODUCTS
+============================================= -->
+<section class="products section" id="products">
+  <div class="container">
+
+    <header class="section-header" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+      <div>
+        <div class="section-label">Hand-Picked</div>
+        <h2 class="section-title">Featured Items</h2>
+      </div>
+      <a href="#" class="btn btn-outline">View All</a>
+    </header>
+
+    <div class="products__grid">
+
+      <!-- Product Card -->
+      <article class="product-card">
+        <div class="product-card__img">
+          
+          <img src="images/denim jacket (1).jpg" class="product-img" alt="Product">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__name">Vintage Denim Jacket</div>
+          <div class="product-card__size">Sizes: S, M, L</div>
+          <div class="product-card__meta">
+            <div>
+              <span>KES 850</span>
+            </div>
+            <button class="btn-view">View</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Repeat -->
+      <article class="product-card">
+        <div class="product-card__img">
+          <img src="images/floral dress.png" class="product-img" alt="Product">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__name">Floral Summer Dress</div>
+          <div class="product-card__size">Sizes: XS, S, M</div>
+          <div class="product-card__meta">
+            <div><span>KES 650</span></div>
+            <button class="btn-view">View</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-card__img">
+          <img src="images/cargo pants.png" class="product-img" alt="Product">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__name">Cargo Pants</div>
+          <div class="product-card__size">Sizes: 30–36</div>
+          <div class="product-card__meta">
+            <div><span>KES 700</span></div>
+            <button class="btn-view">View</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-card__img">
+          <img src="images/kids hoodies.png" class="product-img" alt="Product">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__name">Kids Hoodie</div>
+          <div class="product-card__size">Ages: 3–12</div>
+          <div class="product-card__meta">
+            <div><span>KES 450</span></div>
+            <button class="btn-view">View</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-card__img">
+          <img src="images/leather.png" class="product-img" alt="Product">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__name">Leather Handbag</div>
+          <div class="product-card__size">Colors: Brown, Black</div>
+          <div class="product-card__meta">
+            <div><span>KES 950</span></div>
+            <button class="btn-view">View</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-card__img">
+          <img src="images/polo shirts.png" class="product-img" alt="Product">
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__name">Polo Shirt</div>
+          <div class="product-card__size">Sizes: S–XL</div>
+          <div class="product-card__meta">
+            <div><span>KES 350</span></div>
+            <button class="btn-view">View</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="#" class="whatsapp-float" id="whatsappBtn" aria-label="Chat on WhatsApp">
+  💬
+</a>
+
+
+  <!-- =============================================
+       WHY CHOOSE US
+  ============================================= -->
+  <section class="why section" id="why" aria-labelledby="why-heading">
+    <div class="container">
+      <header class="section-header" style="text-align:center; max-width:520px; margin-inline:auto; margin-bottom:clamp(32px,4vw,52px);">
+        <div class="section-label reveal">Our Promise</div>
+        <h2 class="section-title reveal reveal-delay-1" id="why-heading">Why Shop With TukuStyle?</h2>
+      </header>
+      <div class="why__grid">
+
+        <div class="why-card reveal">
+          <div class="why-card__icon" aria-hidden="true">💰</div>
+          <h3 class="why-card__title">Affordable Prices</h3>
+          <p class="why-card__desc">Every item is priced fairly. Quality fashion shouldn't cost a fortune — we make sure of that.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-card__icon" aria-hidden="true">✅</div>
+          <h3 class="why-card__title">Quality Selection</h3>
+          <p class="why-card__desc">Each piece is inspected before going on sale. No torn, faded, or low-quality items — only the best mitumba.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-card__icon" aria-hidden="true">🚚</div>
+          <h3 class="why-card__title">Weekly New Stock</h3>
+          <p class="why-card__desc">Fresh arrivals every week — so there's always something new to discover whether you shop in-store or online.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-3">
+          <div class="why-card__icon" aria-hidden="true">🇰🇪</div>
+          <h3 class="why-card__title">Local Business</h3>
+          <p class="why-card__desc">Proudly Kenyan. When you shop with us, you support a local hustle and community in Nairobi.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       TESTIMONIALS
+  ============================================= -->
+  <section class="testimonials section" id="testimonials" aria-labelledby="testi-heading">
+    <div class="container">
+      <header class="section-header" style="text-align:center; max-width:520px; margin-inline:auto; margin-bottom:clamp(32px,4vw,52px);">
+        <div class="section-label reveal">Reviews</div>
+        <h2 class="section-title reveal reveal-delay-1" id="testi-heading">What Our Customers Say</h2>
+      </header>
+      <div class="testimonials__grid">
+
+        <article class="testi-card reveal" aria-label="Review by Wanjiru Kamau">
+          <div class="testi-card__stars" aria-label="5 stars">★★★★★</div>
+          <p class="testi-card__quote">
+            Nilinunua jacket kwa KES 800 na ilionekana kama mpya kabisa! The quality is unmatched for the price. I now shop here every month.
+          </p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar avatar-1" aria-hidden="true">WK</div>
+            <div>
+              <div class="testi-card__name">Wanjiru Kamau</div>
+              <div class="testi-card__loc">📍 Westlands, Nairobi</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testi-card reveal reveal-delay-1" aria-label="Review by Otieno Brian">
+          <div class="testi-card__stars" aria-label="5 stars">★★★★★</div>
+          <p class="testi-card__quote">
+            Best mitumba shop in Nairobi, hands down. Found a full suit for KES 1,500 — wore it to an interview and got the job. Worth every bob!
+          </p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar avatar-2" aria-hidden="true">OB</div>
+            <div>
+              <div class="testi-card__name">Otieno Brian</div>
+              <div class="testi-card__loc">📍 Kasarani, Nairobi</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testi-card reveal reveal-delay-2" aria-label="Review by Fatuma Hassan">
+          <div class="testi-card__stars" aria-label="4 stars">★★★★☆</div>
+          <p class="testi-card__quote">
+            Ninaipenda hii shop sana. The ladies section has so many cute dresses and the prices are very reasonable. Delivery was also fast!
+          </p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar avatar-3" aria-hidden="true">FH</div>
+            <div>
+              <div class="testi-card__name">Fatuma Hassan</div>
+              <div class="testi-card__loc">📍 Eastleigh, Nairobi</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       CTA BANNER
+  ============================================= -->
+  <section class="cta-banner" aria-label="Call to action – New arrivals">
+    <div class="container">
+      <div class="cta-banner__inner reveal">
+        <div class="cta-banner__pill" aria-hidden="true">🔔 Weekly Drops</div>
+        <h2 class="cta-banner__heading">New Arrivals Every Week!</h2>
+        <p class="cta-banner__sub">Don't miss out on the freshest mitumba picks. New stock lands every Friday.</p>
+        <a href="#products" class="btn btn-light">
+          Browse Collection
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+
+        <!-- Brand column -->
+        <div>
+          <div class="footer__brand-text">Tuku<span>Style</span></div>
+          <div class="footer__tagline">Nairobi's Favourite Thrift Shop</div>
+          <p class="footer__desc">
+            Affordable, quality second-hand fashion for every Kenyan. Look good, feel great — without the hefty price tag.
+          </p>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="#" aria-label="Facebook" title="Facebook">📘</a>
+            <a href="#" aria-label="Instagram" title="Instagram">📸</a>
+            <a href="#" aria-label="TikTok" title="TikTok">🎵</a>
+            <a href="#" aria-label="WhatsApp" title="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer__col-title">Quick Links</h3>
+          <nav aria-label="Footer navigation">
+            <ul class="footer__links" role="list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#products">Shop</a></li>
+              <li><a href="#categories">Categories</a></li>
+              <li><a href="#why">About Us</a></li>
+              <li><a href="#testimonials">Reviews</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Categories -->
+        <div>
+          <h3 class="footer__col-title">Categories</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="#">Men's Clothing</a></li>
+            <li><a href="#">Women's Clothing</a></li>
+            <li><a href="#">Kids' Wear</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Shoes</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="footer__col-title">Contact Us</h3>
+          <address style="font-style:normal;">
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon">📍</span>
+              <span>Gikomba Market, Nairobi CBD<br>Stall No. B-214</span>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon">📞</span>
+              <a href="tel:+254700000000" style="color:inherit; transition: color 0.3s;" onmouseover="this.style.color='#2FD1E0'" onmouseout="this.style.color='inherit'">+254 700 000 000</a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon">✉️</span>
+              <a href="mailto:hello@tukustyle.co.ke" style="color:inherit; transition: color 0.3s;" onmouseover="this.style.color='#2FD1E0'" onmouseout="this.style.color='inherit'">hello@tukustyle.co.ke</a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-icon">🕐</span>
+              <span>Mon–Sat: 8am – 7pm<br>Sunday: 10am – 4pm</span>
+            </div>
+          </address>
+        </div>
+
+      </div>
+
+      <!-- Footer bottom bar -->
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2025 TukuStyle. All rights reserved.</p>
+        <nav class="footer__bottom-links" aria-label="Legal links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Returns</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+
+  
+  <script src="script.js" defer></script>
+
+</body>
+</html>
